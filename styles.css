@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0e0e2c, #1f1f60);
+    color: #fff;
+  }
+
+  /* Стили для шапки сайта (header) */
+  header {
+    background: #14144b;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Стили для навигационных ссылок */
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  /* Эффект при наведении на ссылку */
+  nav a:hover {
+    color: #ffb400;
+  }
+
+  /* Секция героя с фоновым изображением и затемнением */
+  .hero {
+    background: url('casino-banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+  }
+
+  /* Заголовок внутри секции героя */
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+
+  /* Стили для кнопки */
+  .btn {
+    padding: 15px 30px;
+    background: #ffb400;
+    color: #000;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  /* Эффект при наведении на кнопку */
+  .btn:hover {
+    background: #e09e00;
+  }
+
+  /* Универсальный стиль для всех секций */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #14144b;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  /* Подвал сайта (footer) */
+  footer {
+    background: #1f1f60;
+    padding: 30px;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+
+  /* Стили для текстовых полей формы */
+  form input {
+    padding: 12px 15px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  /* Адаптивная верстка для мобильных устройств */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
